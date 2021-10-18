@@ -1,0 +1,273 @@
+<html>
+<title>Pizza Express</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Sedgwick Ave", cursive}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sedgwick Ave", cursive;
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+
+<!-- Navbar  -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-large w3-padding w3-card" style="letter-spacing:0px;">
+    <a href="#home" class="w3-bar-item w3-button">Pizza Express</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#location" class="w3-bar-item w3-button">Location & Contact</a>
+      <a href="#occasions" class="w3-bar-item w3-button">Occasions</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<style>
+* {box-sizing: border-box;}
+body {font-family: "Sedgwick Ave", cursive;;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  color: red;
+  background-color: white;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*indicators*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 150px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://e3.365dm.com/20/08/2048x1152/skynews-pizza-express-restaurant_5057768.jpg" style="width:100%">
+  <div class="text">Pizza Express</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://danielfooddiary.com/wp-content/uploads/2016/07/pizzaexpress1.jpg" style="width:100%">
+  <div class="text">Pizza & Salads</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://www.cookingwithmykids.co.uk/wp-content/uploads/2020/07/pizza-express-dough-balls-11-scaled.jpg" style="width:100%">
+  <div class="text">Dough Balls & Garlic Butter</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://ucarecdn.com/4e018157-4cbb-4e8f-9dac-272ab7be69d5/" style="width:100%">
+  <div class="text">Pizza Delivery & Takeaway</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://images.squarespace-cdn.com/content/v1/5dccbf96737b35229eaeed90/1605603657513-WDFR48B6GPIE3S46JJ06/Dessert+Platter.png?format=2500w" style="width:100%">
+  <div class="text">Desserts</div>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+
+</div>
+<br>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000);
+}
+</script>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://www.pizzaexpress.com/-/media/Images/Peter-Boizot/pizza_restaurants_v6.ashx?h=700&w=1000&la=en&hash=53A600CFD67C2442EDEB3655C7290080" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center w3-text-red">About History</h1><br>
+      <h5 class="w3-center">Tradition since 1965</h5>
+      <p class="w3-large">Founded in 1965 by Peter Boizot, PizzaExpress opened its first restaurant in London's Wardour Street. Inspired by a trip to Italy, Boizot brought back to London a pizza oven from Naples and a chef from Sicily. In 1969, jazz performances began at its Dean Street restaurant, London.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium"> It now has over 470 restaurants across the United Kingdom and 100 overseas in Europe, Hong Kong, China, India, Indonesia, Kuwait, The Philippines, The United Arab Emirates, Singapore and Saudi Arabia.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center w3-text-red">Menu</h1><br>
+      <h4>Dough Ball Doppio</h4>
+      <p class="w3-text-grey">Double portion of our famous dough balls served with garlic butter, pesto Siciliano and pesto Genovese. (Available with a selection of vegan dips) S$ 14.00</p><br>
+
+      <h4>Garlic Bread with Mozzarella</h4>
+      <p class="w3-text-grey">Our famous dough, freshly baked with mozzarella and brushed with garlic butter. (Available without mozzarella) S$ 7.00</p><br>
+
+      <h4>Penne Arrabiata</h4>
+      <p class="w3-text-grey">Penne in a spicy tomato sauce, with cherry tomatoes, garlic, chili flakes and fresh parsley. S$ 16.00</p><br>
+
+      <h4>Pomodoro Pesto</h4>
+      <p class="w3-text-grey">Fresh mozzarella, passata, cherry tomatoes and garlic oil. Finished with fresh basil and pesto Genovese. (Available with vegan mozzarella) S$ 23.00</p><br>
+
+      <h4>Chocolate Fudge Cake</h4>
+      <p class="w3-text-grey">Our famous home-baked chocolate pudding. S$ 11.50</p>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://i.pinimg.com/736x/96/bb/c4/96bbc4cbeaa1d383b9a1297b89515cbb--naples-italy-pizza-margherita.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <div class="container">
+    <a href="https://www.pizzaexpress.sg/menu">
+    <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/10/08/13/gettyimages-1167381569.jpg?width=1200&width=1200&auto=webp&quality=75" class="w3-round w3-image w3-opacity-min"></img>
+    <p class="w3-text-red w3-large w3-center">Click the Image to View Full Menu! ☝</p><br>
+    </a>
+  </div>
+
+  <!-- Location Section -->
+  <div class="w3-row w3-padding-64" id="location">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center w3-text-red">Locations & Contact in Singapore</h1><br>
+      <h4>Pizza Express| Scotts Square</h4>
+      <p class="w3-medium">Phone: 6983 7349 <br> Opens at 11:30AM <br> (Dine-in Takeaway-No-contact-delivery)</p><br>
+
+      <h4>PizzaExpress | Duo Galleria</h4>
+      <p class="w3-medium">7 Fraser St, #01-01/02 In DUO Galleria <br> Phone: 6983 7350 <br> Opens at 11:30AM <br> (Dine-in Takeaway-No-contact-delivery)</p><br>
+
+      <h4>PizzaExpress | Holland Village</h4>
+      <p class="w3-medium">Phone: 6677 3955 <br> Opens at 11:30AM <br> (Dine-in Takeaway-No-contact-delivery)</p><br>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://images.squarespace-cdn.com/content/v1/5690d8237086d72427243ace/1523009472486-P7D7Y2I7F4EV672OS9UG/Rockett_Studio_Restaurant_Interior_Design_Pizzaexpress_Marina_One_Singapore_4.jpg" class="w3-round w3-image w3-opacity-min" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Occasions Section -->
+  <div class="w3-container w3-medium w3-padding-64" id="occasions">
+    <h1 class="w3-center w3-text-red">Occasions</h1><br>
+    <p class="w3-large">Catering services are available for any event, large or small. It is important to us that the food meets both the appearance and the taste criteria. Your happiness and satisfaction are of the utmost importance to us. Please don't hesitate to contact us.</p>
+    <p class="w3-text-yellow w3-large"><b>Want to enjoy food at the comfort of your home?</b></p>
+    <p class="w3-text-red w3-large">We provide island wide delivery with our partners oddle and deliveroo, so that you enjoy your favorite meals at the comfort of your house!</p>
+    <p class="w3-text-green w3-large"><b>Pick the platform you would like to order from:</b></p>
+    <a href="https://deliveroo.com.sg/?utm_source=google&utm_medium=cpc&utm_term=deliveroo&utm_campaign=%2A%2A%5EAcquisition%5ESearch%5EBrand%5ESingapore%5EAll%20Cities%5E%5EPhrase%5EAPI%5E%5E%5E%5E%5EEN%5EStrategic%5E%C2%A310267315394&utm_loc=9062546&utm_device=c&utm_adposition=&utm_network=g&utm_targetid=kwd-52576849585&gclid=CjwKCAjw8KmLBhB8EiwAQbqNoLoxKyfLanLcp4IksG3ytaAAmfK8j8izmKZZFdjuixsFeqDmQLLKRhoCm6MQAvD_BwE&gclsrc=aw.ds">
+    <p class="w3-text-blue w3-large"><b>Deliveroo</b></p>
+    <a href="https://eats.oddle.me/menus/pizzaexpress">
+    <p class="w3-text-indigo w3-large"><b>Oddle</b></p>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://www.hungryhowies.com/sites/default/files/celebrate-pizza-month.jpg" class="w3-round w3-image w3-opacity-min" style="width:100%">
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-text-red w3-medium w3-padding-32">
+  <p>Powered By Pizza Express & Oddle</p>
+</footer>
+
+</body>
+</html>
